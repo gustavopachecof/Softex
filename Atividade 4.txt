@@ -1,0 +1,43 @@
+algoritmo "cadastro"
+
+Var cidade, nome_do_pai, nome_da_mae : caractere
+Var cpf, rg, idade : inteiro
+Var peso, renda_bruta : real
+
+inicio
+
+escreval("Vamos fazer seu cadastro!")
+
+escreval("Favor preencher os campos abaixo, conforme forem solicitados")
+
+escreval("Informe sua cidade: ")
+leia(cidade)
+
+escreval("Informe o número do seu CPF: ")
+leia(cpf)
+
+escreval("Informe o número do seu RG: ")
+leia(rg)
+
+escreval("Informe sua idade: ")
+leia(idade)
+
+escreval("Informe o nome do seu pai: ")
+leia(nome_do_pai)
+
+escreval("Informe o nome da sua mãe: ")
+leia(nome_da_mae)
+
+escreval("Qual o valor da sua renda bruta: ")
+leia(renda_bruta)
+
+escreval("Cidade: ", cidade)
+escreval("CPF: ", cpf)
+escreval("RG: ", rg)
+escreval("Idade: ", idade)
+escreval("Nome do pai: ", nome_do_pai)
+escreval("Nome da mãe: ", nome_da_mae)
+escreval("Peso: ", peso)
+escreva("Renda bruta: ", renda_bruta)
+
+fimalgoritmo
