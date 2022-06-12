@@ -1,0 +1,10 @@
+Aluno: Gustavo Luiz Pacheco Filho
+
+nome <- "José Almeida da Silva"
+cpf <- 12345678900
+rg <- 9517530
+altura <- 1,78
+endereco <- "Rua A, 380 - centro - Recife/PE"
+
+
+Foi inserido o nome das variáveis, logo após, o comando de atribuição "<-", em seguida os dados a serem atribuídos às variáveis.
