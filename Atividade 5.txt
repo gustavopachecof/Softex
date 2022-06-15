@@ -1,0 +1,56 @@
+Algoritmo "Atividade_5"
+// 
+//  
+// Descrição   : Através das respostas "sim" e "não, o algoritmo descobre
+//               qual meio de transporte o usuário está pensando.
+
+// Autor(a)    : Gustavo Luiz Pacheco Filho
+// Data atual  : 14/06/2022
+
+Var
+resposta1,resposta2,resposta3, resposta4, resposta5, resposta6 : caractere
+
+
+
+Inicio
+escreval("Vamos descobrir qual meio de transporte terrestre você está pensando")
+escreval("Responda escrevendo 'sim' ou 'nao'")
+
+escreval("O meio de transporte é terrestre?")
+leia(resposta1)
+se resposta1 = "sim" entao
+escreval("Possui motor?")
+leia(resposta2)
+se resposta2 = "nao" entao
+escreval("O veículo é uma bicicleta")
+senão se resposta2 = "sim" entao
+escreval("Possui 2 rodas?")
+leia(resposta3)
+se resposta3 = "sim" entao
+escreval("O veículo é uma moto!")
+senão se resposta3 = "nao" entao
+escreval("Carrega grandes cargas?")
+leia(resposta4)
+se resposta4 = "nao" entao
+escreval ("O veículo é um carro de passeio!")
+senão se resposta4 = "sim" entao
+escreval ("O veiculo anda sobre trilhos?")
+leia(resposta5)
+se resposta5 = "sim" entao
+escreval ("O veiculo é um trem/metrô!")
+senao se resposta5 = "nao" entao
+escreval ("remove entulhos?")
+leia(resposta6)
+se resposta6 = "sim" entao
+escreval ("O veiculo é um trator!")
+senao se resposta6 = "nao" entao
+escreval ("O veiculo é um caminhão!")
+
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+
+Fimalgoritmo
