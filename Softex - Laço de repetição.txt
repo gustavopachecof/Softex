@@ -1,0 +1,82 @@
+Algoritmo "Softex - Laço de repetição"
+
+
+Var
+   turma, nome: caracter
+   nota: real
+   x: inteiro
+   nomeMaiorNotaA,nomeMaiorNotaB,nomeMaiorNotaC,nomeMaiorNotaD: caracter
+   maiorNotaA,maiorNotaB,maiorNotaC,maiorNotaD: real
+   qtdAlunosAprovadosA,qtdAlunosAprovadosB,qtdAlunosAprovadosC,qtdAlunosAprovadosD: inteiro
+
+Inicio
+   x<- 0
+
+   enquanto x<100 faça
+      x <- x+1
+      
+      escreval("Informe sua turma: ")
+      leia(turma)
+      escreval("Informe seu nome: ")
+      leia(nome)
+      escreval("Informe sua nota: ")
+      leia(nota)
+
+      se turma = "a" entao
+         se nota>=7 entao
+            qtdAlunosAprovadosA <- qtdAlunosAprovadosA + 1
+            se nota>maiorNotaA entao
+               maiorNotaA <- nota
+               e
+               nomeMaiorNotaA <- nome
+            fimse
+         fimse
+      fimse
+
+
+      se turma = "b" entao
+         se nota>=7 entao
+            qtdAlunosAprovadosB <- qtdAlunosAprovadosB + 1
+            se nota>maiorNotaB entao
+               maiorNotaB <- nota
+               e
+               nomeMaiorNotaB <- nome
+            fimse
+         fimse
+      fimse
+
+      se turma = "c" entao
+         se nota>=7 entao
+            qtdAlunosAprovadosC <- qtdAlunosAprovadosC + 1
+            se nota>maiorNotaC entao
+               maiorNotaC <- nota
+               e
+               nomeMaiorNotaC <- nome
+            fimse
+         fimse
+      fimse
+
+      se turma = "d" entao
+         se nota>=7 entao
+            qtdAlunosAprovadosD <- qtdAlunosAprovadosD + 1
+            se nota>maiorNotaD entao
+               maiorNotaD <- nota
+               e
+               nomeMaiorNotaD <- nome
+            fimse
+         fimse
+      fimse
+
+      limpatela
+   fimenquanto
+
+   escreval("Qtd Aprovados A: ", qtdAlunosAprovadosA," Qtd Aprovados B: ",qtdAlunosAprovadosB," Qtd Aprovados C: ",qtdAlunosAprovadosC," Qtd Aprovados D: ",qtdAlunosAprovadosD)
+   escreval("Maior Nota A: ", maiorNotaA, " Aluno: ", nomeMaiorNotaA)
+   escreval("Maior Nota B: ", maiorNotaB, " Aluno: ",nomeMaiorNotaB)
+   escreval("Maior Nota C: ", maiorNotaC, " Aluno: ",nomeMaiorNotaC)
+   escreval("Maior Nota D: ", maiorNotaD, " Aluno: ",nomeMaiorNotaD)
+
+
+
+
+Fimalgoritmo
