@@ -1,0 +1,43 @@
+/*
+ ============================================================================
+ Name        : atividade.c
+ Author      : Gustavo Luiz Pacheco Filho
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#define tamanho 10
+
+int main(void) {
+
+	int numeros[tamanho];
+	int i, aux, contador;
+
+	printf("Informe 10 números para preencher o array, e pressione enter após inserir cada um: ");
+	for(i=0; i<tamanho; i++) {
+		scanf("%d", &numeros[i]);
+	}
+
+	printf("Ordem atual dos itens no array: \n");
+	for(i=0; i<tamanho; i++) {
+		printf("%4d", numeros[i]);
+	}
+
+	for(contador=1; contador<tamanho; contador++){
+		for(i=0;i<tamanho-1;i++){
+			if (numeros[i]>numeros[i+1]){
+				aux = numeros[i];
+				numeros[i] = numeros[i+1];
+				numeros[i+1] = aux;
+			}
+		}
+	}
+
+	printf("\nElementos do array em ordem crescente:\n");
+
+	for (i = 0; i < tamanho; i++)
+	{printf("%4d", numeros[i]);}
+
+	return 0;
+}
