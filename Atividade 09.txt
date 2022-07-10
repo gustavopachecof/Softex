@@ -1,0 +1,38 @@
+/*
+ ============================================================================
+ Name        : atividade 09.c
+ Author      : Gustavo
+
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main(void) {
+
+	   int *ptr, i, n1, n2;
+
+	    n1=22;
+	    n2=23;
+
+	    ptr = (int *) malloc (n1 * sizeof(int));
+	    
+	    printf("Endereço alocado na memória: ");
+
+	    for(i=0; i<n1; i++)
+	    printf("%i\n", ptr + i);
+
+	    ptr = realloc(ptr, n2 * sizeof(int));
+
+	    printf("Novo endereço alocado na memória: ");
+
+	    for(i=0; i<n2; i++)
+	    printf("%i\n", ptr + i);
+
+	    free(ptr);
+	
+	    return 0;
+}
