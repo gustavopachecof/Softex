@@ -1,0 +1,26 @@
+class Calculadora:
+    def __init__(self):
+        pass
+
+    def soma(self, R1, I1, R2, I2, R3, I3):
+        soma = complex(R1,I1) + complex(R2,I2) + complex(R3,I3)
+        return print(f'O resultado da soma dos números {complex(R1,I1)}, {complex(R2,I2)} e {complex(R3,I3)} é {soma}.')
+
+    def subtracao(self, R1, I1, R2, I2, R3, I3):
+        subtracao = complex(R1,I1) - complex(R2,I2) - complex(R3,I3)
+        return print(f'O resultado da subtração dos números {complex(R1,I1)}, {complex(R2,I2)} e {complex(R3,I3)} é {subtracao}.')
+
+    def multiplicacao(self, R1, I1, R2, I2, R3, I3):
+        multiplicacao = complex(R1,I1) * complex(R2,I2) * complex(R3,I3)
+        return print(f'O resultado da multiplação dos números {complex(R1,I1)}, {complex(R2,I2)} e {complex(R3,I3)} é {multiplicacao}.')
+
+    def divisao(self, R1, I1, R2, I2, R3, I3):
+        divisao = complex(R1,I1) / complex(R2,I2) / complex(R3,I3)
+        return print(f"O resultado da divisão dos números {complex(R1,I1)}, {complex(R2,I2)} e {complex(R3,I3)} é {divisao}.")
+
+
+calculadora = Calculadora()
+calculadora.soma(5,7,9,5,7,8)
+calculadora.subtracao(8,2,4,4,2,6)
+calculadora.multiplicacao(3,9,5,8,5,4)
+calculadora.divisao(9,2,4,6,4,3)
