@@ -1,0 +1,46 @@
+def soma(num1, num2):
+    resSoma = num1 + num2
+    return resSoma
+
+
+def multiplicacao(num1, num2):
+    resMultip = num1 * num2
+    return resMultip
+
+
+def divisao(num1, num2):
+    resDiv = num1 / num2
+    return resDiv
+
+
+def subtracao(num1, num2):
+    resSubt = num1 - num2
+    return resSubt
+
+
+def calculadora(num1, num2, operacao):
+        if operacao==0:
+            res = soma(num1, num2)
+            return res
+        elif operacao==1:
+            res = subtracao(num1, num2)
+            return res
+        elif operacao==2:
+            res = multiplicacao(num1,num2)
+            return res
+        elif operacao==3:
+            res = divisao(num1, num2)
+            return res
+        else:
+            return "0"
+
+print("Informe o primeiro e o segundo numero da equação: ")
+num1 = int(input())
+num2 = int(input())
+
+
+print("informe: 0 - soma, 1 - subtração, 2 - multiplicação, 3 - divisão")
+operacao = int(input())
+
+print("Resultado da equação: ")
+print(calculadora(num1, num2, operacao))
