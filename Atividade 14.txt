@@ -1,0 +1,16 @@
+qtdrodas = 4
+pesobruto = 7000
+capmaxima = 9
+
+if 0 < qtdrodas < 4:
+    print("Categoria A")
+elif 0 < qtdrodas == 4 and pesobruto <= 3500 and capmaxima <= 8:
+    print("Categoria B")
+elif 0 < qtdrodas >= 4 and 3500 < pesobruto <= 6000:
+    print("Categoria C")
+elif 0 < qtdrodas >= 4 and capmaxima > 8:
+    print("Categoria D")
+elif 0 < qtdrodas >= 4 and pesobruto > 6000:
+    print("Categoria E")
+else:
+    print("Insira apenas números positivos.")
