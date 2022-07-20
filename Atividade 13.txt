@@ -1,0 +1,12 @@
+nome = "Gustavo Luiz"
+nota1 = 5.3
+nota2 = 8.7
+qtdfaltas = 4
+media = (nota1+nota2)/2
+
+if media < 7:
+    print(f"O aluno: {nome} está reprovado!")
+elif qtdfaltas > 3:
+    print(f"O aluno: {nome} está reprovado!")
+elif media >= 7:
+    print(f"O aluno: {nome} está aprovado!")
