@@ -1,0 +1,17 @@
+def idade(nascimento):
+    age = 2022 - int(nascimento)
+    return age
+
+
+dataNascimento = 0
+
+while 1922 > dataNascimento or dataNascimento > 2021:
+    nome = input("\nInforme seu nome completo: ")
+    dataNascimento = int(input("Data de nascimento (entre 1922 e 2021): "))
+    
+    if dataNascimento > 2022 or dataNascimento < 1922:
+        print("\nInforme uma data entre 1922 e 2021.")
+
+    else:
+        print("\nNome completo: ", nome)
+        print("Idade: ", idade(dataNascimento))
