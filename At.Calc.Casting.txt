@@ -1,0 +1,58 @@
+import time
+
+def soma(num1, num2):
+    resSoma = num1 + num2
+    return resSoma
+
+
+def multiplicacao(num1, num2):
+    resMultip = num1 * num2
+    return resMultip
+
+
+def divisao(num1, num2):
+    resDiv = num1 / num2
+    return resDiv
+
+
+def subtracao(num1, num2):
+    resSubt = num1 - num2
+    return resSubt
+
+
+def calculadora(num1, num2, operacao):
+    if operacao == 1:
+        res = soma(num1, num2)
+        return res
+    elif operacao == 2:
+        res = subtracao(num1, num2)
+        return res
+    elif operacao == 3:
+        res = multiplicacao(num1, num2)
+        return res
+    elif operacao == 4:
+        res = divisao(num1, num2)
+        return res
+
+
+operacao = 1
+while operacao != 0:
+
+
+    print("\n1: soma")
+    print("2: subtração")
+    print("3: multiplicação")
+    print("4: divisão")
+    print("0: sair")
+
+    operacao = int(input("\nQual operação deseja realizar: "))
+
+    if operacao != 0:
+
+        num1 = int(input("Informe o primeiro número da equação: "))
+        num2 = int(input("Informe o segundo número da equação: "))
+
+        print("Resultado da equação: ", (calculadora(num1, num2, operacao)))
+
+        time.sleep(1)
+
