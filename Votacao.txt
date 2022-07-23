@@ -1,0 +1,39 @@
+import enum
+import os
+
+
+class Votacao(enum.Enum):
+    candidato_X = 889
+    candidato_Y = 847
+    candidato_Z = 515
+
+
+votos_X = 0
+votos_Y = 0
+votos_Z = 0
+
+voto_inserido = 1
+continuar = "a"
+
+while continuar != "nao":
+
+    print('Número dos candidatos\n')
+    print(f'Candidato X: {int(Votacao.candidato_X.value)}{os.linesep}Candidato Y: {int(Votacao.candidato_Y.value)}')
+    print(f'Candidato Z: {int(Votacao.candidato_Z.value)}{os.linesep}\n')
+
+    voto_inserido = int(input(f'Em qual candidato deseja votar: '))
+
+    if voto_inserido == int(Votacao.candidato_X.value):
+        votos_X += 1
+    elif voto_inserido == int(Votacao.candidato_Y.value):
+        votos_Y += 1
+    elif voto_inserido == int(Votacao.candidato_Z.value):
+        votos_Z += 1
+    else:
+        print("Informe apenas numeros!")
+
+    print(f'\nTOTAL CANDIDATO X: {votos_X}{os.linesep}TOTAL CANDIDATO Y: {votos_Y}{os.linesep}TOTAL CANDIDATO Z: {votos_Z}{os.linesep}')
+
+    continuar = input('Deseja continuar a votação? Sim ou Nao: ')
+
+os.system('cls')
