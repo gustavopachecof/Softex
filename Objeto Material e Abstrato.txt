@@ -1,0 +1,40 @@
+Aluno: Gustavo Luiz Pacheco Filho
+
+Abaixo descrevo dois objetos criados em pseudo-linguagem, apenas
+para demonstrar a estruturação de um objeto, um abstrato e outro
+material.
+
+Objeto Abstrato
+-----------------------------
+Objeto: ServicoBarbearia
+Atributos {
+NomeCliente: caractere
+NomeBarbeiro: caractere
+ServicoRealizado: caractere
+Valor: real }
+
+Metodos {
+CortarTesoura()
+CortarMaquina()
+Barbear()}
+
+
+Objeto Material
+-------------
+
+Objeto: Jetski
+
+Atributos: 
+Modelo: caractere
+Cor: caractere
+Ano: inteiro
+Potencia: real
+
+Metodos:
+Acelerar()
+Freiar()
+Ligar()
+Desligar
+Direção()
+
+
