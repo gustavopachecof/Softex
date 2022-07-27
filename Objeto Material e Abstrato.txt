@@ -8,36 +8,42 @@ material.
 Objeto Abstrato
 ----------------------------
 
-Objeto: ServicoBarbearia
+Classe: Servico
 
-Atributos {
-NomeCliente: caractere
-NomeBarbeiro: caractere
-ServicoRealizado: caractere
-Valor: real }
+  Objeto: ServicoBarbearia
 
-Metodos {
-CortarTesoura()
-CortarMaquina()
-Barbear()}
+  NomeCliente: caractere
+  NomeBarbeiro: caractere
+  ServicoRealizado: caractere
+  Valor: real 
 
+  Metodo CortarTesoura()
+    FimMetodo
+  Metodo CortarMaquina()
+    FimMetodo
+  Metodo UsarNavalha()
+    FimMetodo
+FimClasse
 ----------------------------
 Objeto Material
 ----------------------------
 
-Objeto: Jetski
+Classe: VeiculoAquatico
+  Objeto: Jetski
 
-Atributos { 
-Modelo: caractere
-Cor: caractere
-Ano: inteiro
-Potencia: real }
+  Modelo: caracter
+  Cor: caracter
+  Ano: inteiro
+  Potencia: real 
 
-Metodos {
-Acelerar()
-Freiar()
-Ligar()
-Desligar
-Direção() }
-
-
+  Metodo Acelerar()
+    FimMetodo
+  Metodo Freiar()
+    FimMetodo
+  Metodo Ligar()
+    FimMetodo
+  Metodo Desligar
+    FimMetodo
+  Metodo Direção() 
+    FimMetodo
+FimClasse
