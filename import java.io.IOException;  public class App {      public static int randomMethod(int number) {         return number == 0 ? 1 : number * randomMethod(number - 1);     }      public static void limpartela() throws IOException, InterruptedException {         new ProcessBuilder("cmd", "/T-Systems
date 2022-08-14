@@ -1,0 +1,46 @@
+import java.io.IOException;
+
+public class App {
+
+    public static int randomMethod(int number) {
+        return number == 0 ? 1 : number * randomMethod(number - 1);
+    }
+
+    public static void limpartela() throws IOException, InterruptedException {
+        new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+    }
+
+    public static String ArrayChallenge(String[] strArr) {
+        String[] stringArray = strArr[1].split(", ");
+
+        String pos1 = "x";
+        String pos2 = "y";
+
+        while (!strArr[0].equals(pos1 + pos2)) {
+
+            for (int i = 0; i < stringArray.length; i++) {
+                for (int a = 0; a < stringArray.length; a++) {
+                    if (strArr[0].contains(stringArray[a]) && !strArr[0].equals(pos1 + pos2)) {
+                        pos1 = stringArray[i];
+                        pos2 = stringArray[a];
+                    } else if (!strArr[0].contains(stringArray[a])) {
+                        continue;} 
+                        else {
+                        break;
+                    }
+                }
+            }
+            String novaString = pos1 + ", " + pos2 + "akpf92wh38";
+            System.out.println(novaString);
+        }
+
+        return strArr[0];
+    }
+
+    public static void main(String[] args) throws Exception {
+        limpartela();
+
+        String[] palavras = { "de", "a, all, b, ball, bas, base, cat, code, d, e, quit, z" };
+        ArrayChallenge(palavras);
+    }
+}
