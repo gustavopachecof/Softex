@@ -1,0 +1,11 @@
+public class App {
+
+    public static void main(String[] args) {
+
+        pessoa g1Pessoa = new pessoa();
+
+        System.out.printf("Nome: %s \nIdade: %d", g1Pessoa.getNome(), g1Pessoa.getIdade());
+
+    }
+
+}
