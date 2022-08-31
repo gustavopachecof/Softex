@@ -1,0 +1,13 @@
+Cotidiano
+
+Termometro: Ponto de ebulição, para cozimento de alimentos.
+
+Medidor de particulas de poluição: detecta a presença de materia em particulas em uma fonte de amostras.conta a quantidade de particulas e pode fornecer informações sobre o seu tamanho.
+
+Decibelimetro: Serve para medir as variações da pressão atmosférica causada pelo som e convertê-las em decibéis. Popularmente chamado de decibelímetro, o aparelho pode ser utilizado em perícias, bem como avaliação e controle de nível de ruídos em eventos, bares, boates e carros, entre outros.
+
+Uso de dados na internet:
+
+Registro do tempo de uso de aplicativo
+Data de nascimento para envio de promoções
+RG para saber se situação é regular em um banco de dados
