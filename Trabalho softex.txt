@@ -1,0 +1,16 @@
+Botão de "entrar" do facebook
+<https://pt-br.facebook.com/login>
+
+HTML element
+<button value="1" class="_42ft _4jy0 _52e0 _4jy6 _4jy1 selected _51sy" id="loginbutton" name="login" tabindex="0" type="submit">Entrar</button>
+
+JS element
+document.querySelector("#loginbutton") 
+
+Retorna o primeiro elemento dentro do documento (usando ordenação em profundidade, pré-ordenada e transversal dos nós do documento) que corresponde ao grupo especificado de seletores.
+
+
+Botão "Sino de notificações" da softex:
+<https://softexrecife.joyclass.com/app/course/oda>
+
+document.querySelector("body > app-root > app-course-layout > div.header > div > div.user-data > div.notificaction-button.ng-star-inserted > button > span.mat-button-wrapper > mat-icon")
