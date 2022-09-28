@@ -1,0 +1,20 @@
+-----> Código 1
+
+var nota1 = prompt("Informe a primeira nota: ");
+var nota2 = prompt("Informe a segunda nota: ");
+var nota3 = prompt("Informe a terceira nota: ");
+
+var media = (nota1+nota2+nota3)/3;
+
+var resultado = (media>=7) ? 'PASSOU' : 'REPROVOU';
+
+console.log(resultado);
+
+-----> Código 2
+
+var nota1 = prompt("Informe a primeira nota: ");
+var nota2 = prompt("Informe a segunda nota: ");
+
+var falta = 21 - (parseInt(nota1)+parseInt(nota2));
+
+console.log(falta);
