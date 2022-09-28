@@ -1,0 +1,15 @@
+var valor1 = prompt("Informe um valor: ")
+var valor2 = prompt("Informe outro valor: ")
+var operador = prompt("Informe o operador aritmético: ")
+
+if (operador == "+"){
+    print('valor1 + valor2')
+} else if (operador == "-"){
+    print('valor1 - valor2')
+} else if (operador == "/"){
+    print('valor1 / valor2')
+} else if(operador == "*"){
+    print('valor1*valor2')
+} else {
+    print("Informe um operador válido")
+}
