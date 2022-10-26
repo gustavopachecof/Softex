@@ -1,0 +1,23 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "Feito para testar o app",
+  "main": "index.js",
+  "scripts": {
+    "test": "w"
+  },
+  "author": "gus",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "asdasd"
+  },
+  "keywords": [
+    "asdad"
+  ],
+  "dependencies": {
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security"
+  }
+}
